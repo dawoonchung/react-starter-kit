@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "airbnb",
+  "root": true,
+  "rules": {
+    "object-curly-spacing": ["error", "never"],
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-case-declarations": "off",
+    "no-unused-vars": "warn",
+    "react/jsx-filename-extension": "off"
+  }
+}
