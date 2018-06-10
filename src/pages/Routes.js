@@ -1,19 +1,20 @@
-import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+// @flow
+import * as React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import MainTemplate from '../templates/MainTemplate';
 
 import Home from './Home';
 
-const Routes = () => (
+const Routes = (): React.Node => (
   <Route
     path="/"
-    render={() => (
+    render={(): React.Node => (
       <MainTemplate>
         <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+          <Route exact path={`${process.env.PUBLIC_URL || ''}/`} component={Home} />
           <Route
-            render={() => (
+            render={(): React.Node => (
               <div>Nothing found!</div>
             )}
           />

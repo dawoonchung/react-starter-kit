@@ -16,6 +16,8 @@
         "left",
         "display",
         "overflow",
+        "overflow-x",
+        "overflow-y",
         "width",
         "min-width",
         "max-width",
@@ -61,6 +63,7 @@
     ],
 	},
 	"ignoreFiles": [
-		"**/vendor/*"
+		"**/vendor/*",
+    "./packages/**/*"
 	]
 }

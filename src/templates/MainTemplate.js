@@ -1,14 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+import * as React from 'react';
 
-const MainTemplate = ({children}) => (
+type Props = {
+  /** Children nodes to render. */
+  children: React.Node,
+};
+
+const MainTemplate = ({ children }: Props): React.Node => (
   <div className="app-wrapper">
     {children}
   </div>
 );
-
-MainTemplate.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default MainTemplate;

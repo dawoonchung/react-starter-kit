@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    flowtype/require-parameter-type: 'off',
+    flowtype/require-return-type: 'off',
+    flowtype/require-valid-file-annotation: 'off',
+    flowtype/require-variable-type: 'off',
+    flowtype/semi: 'off'
+  }
+}
