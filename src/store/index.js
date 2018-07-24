@@ -6,9 +6,9 @@ import rootReducer from './reducers';
 
 const loggerMiddleware = createLogger();
 
-const middleWare = process.env.NODE_ENV === 'development' ?
-  composeWithDevTools(applyMiddleware(thunkMiddleware, loggerMiddleware)) :
-  applyMiddleware(thunkMiddleware);
+const middleWare = process.env.NODE_ENV === 'development'
+  ? composeWithDevTools(applyMiddleware(thunkMiddleware, loggerMiddleware))
+  : applyMiddleware(thunkMiddleware);
 
 export default function configureStore(preloadedState) {
   return createStore(

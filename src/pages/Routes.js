@@ -14,7 +14,9 @@ const Routes = () => (
           <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
           <Route
             render={() => (
-              <div>Nothing found!</div>
+              <div>
+                Nothing found!
+              </div>
             )}
           />
         </Switch>
