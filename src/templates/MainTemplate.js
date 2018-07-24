@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MainTemplate = ({children}) => (
+const MainTemplate = ({ children }) => (
   <div className="app-wrapper">
     {children}
   </div>
