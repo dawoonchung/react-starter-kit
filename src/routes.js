@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import MainTemplate from '../templates/MainTemplate';
+import MainTemplate from './templates/Main';
 
-import Home from './Home';
+import Home from './pages/Home';
 
 const Routes = () => (
   <Route
