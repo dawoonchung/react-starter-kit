@@ -1,10 +1,11 @@
-// @flow
-import * as React from 'react';
+import React from 'react';
 
-const Home = (): React.Node => (
+const Home = () => (
   <div className="home">
     <main>
-      <h1>Start your project!</h1>
+      <h1>
+        Start your project!
+      </h1>
     </main>
   </div>
 );

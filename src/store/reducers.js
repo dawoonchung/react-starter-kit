@@ -1,5 +1,4 @@
-// @flow
-const initialReducer = (): {} => ({
+const initialReducer = () => ({
   reduxInitialised: true,
 });
 
