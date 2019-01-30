@@ -1,6 +1,8 @@
 @import 'variables';
 @import '~bootstrap/scss/bootstrap-reboot';
 @import 'base';
-@import 'components';
+@import 'atoms';
+@import 'molecules';
+@import 'organisms';
 @import 'templates';
 @import 'pages';
