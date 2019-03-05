@@ -1,6 +1,6 @@
 {
-  "name": "new-react-app",
-  "version": "0.1.0",
+  "name": "react-starter-kit",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@babel/core": "7.3.4",
