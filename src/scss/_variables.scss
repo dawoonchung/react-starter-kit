@@ -1,0 +1,36 @@
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 1024px,
+  lg: 1200px,
+  xl: 1440px
+);
+
+$grid-column-gaps: (
+  xs: 0,
+  sm: 0 2rem,
+  md: 0 2rem,
+  lg: 0 4rem,
+  xl: 0 4rem,
+);
+
+// Responsive
+$body-margins: (
+  xs: 2rem,
+  sm: 2rem,
+  md: 3rem,
+  lg: 4rem,
+  xl: 4rem,
+);
+
+$container-max-width: 1920px;
+
+// Typography
+$enable-responsive-font-sizes: true;
+
+/*
+$font-family-sans-serif: neue-haas-unica, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-serif: big-caslon-fb, serif;
+$font-family-monospace: ibm-plex-mono, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+*/

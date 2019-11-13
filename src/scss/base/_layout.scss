@@ -1,0 +1,16 @@
+.container {
+  @include make-container();
+
+  @each $breakpoint, $gap in $grid-column-gaps {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      column-gap: $gap;
+      padding-right: map-get($body-margins, $breakpoint);
+      padding-left: map-get($body-margins, $breakpoint);
+    }
+  }
+
+  position: relative;
+  max-width: $container-max-width;
+}
+
+@include make-grid-columns();
