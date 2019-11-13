@@ -1,7 +1,7 @@
 @mixin make-container() {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat($grid-columns, 1fr);
   margin-right: auto;
   margin-left: auto;
 }
@@ -20,6 +20,6 @@
   grid-column-end: span $size;
 }
 
-@mixin make-col-offset($size) {
-  grid-column-start: $size + 1;
+@mixin make-col-start($i) {
+  grid-column-start: $i;
 }

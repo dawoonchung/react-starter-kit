@@ -3,7 +3,7 @@
 
   @each $breakpoint, $gap in $grid-column-gaps {
     @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
-      column-gap: $gap;
+      gap: $gap;
       padding-right: map-get($body-margins, $breakpoint);
       padding-left: map-get($body-margins, $breakpoint);
     }
