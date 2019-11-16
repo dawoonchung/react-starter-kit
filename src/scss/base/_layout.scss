@@ -4,7 +4,8 @@
   @each $breakpoint, $gap in $grid-column-gaps {
     @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
       max-width: map-get($container-max-widths, $breakpoint);
-      gap: $gap;
+      column-gap: $gap;
+      row-gap: map-get($grid-row-gaps, $breakpoint);
       padding-right: map-get($body-margins, $breakpoint);
       padding-left: map-get($body-margins, $breakpoint);
     }

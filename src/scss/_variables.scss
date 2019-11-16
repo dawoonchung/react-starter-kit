@@ -9,10 +9,18 @@ $grid-breakpoints: (
 
 $grid-column-gaps: (
   xs: 0,
-  sm: 0 2rem,
-  md: 0 2rem,
-  lg: 0 4rem,
-  xl: 0 4rem,
+  sm: 2rem,
+  md: 2rem,
+  lg: 4rem,
+  xl: 4rem,
+);
+
+$grid-row-gaps: (
+  xs: 0,
+  sm: 0,
+  md: 0,
+  lg: 0,
+  xl: 0,
 );
 
 // Responsive
