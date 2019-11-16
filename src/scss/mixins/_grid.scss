@@ -1,7 +1,7 @@
-@mixin make-container() {
+@mixin make-container($columns) {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat($grid-columns, 1fr);
+  grid-template-columns: repeat($columns, 1fr);
   margin-right: auto;
   margin-left: auto;
 }

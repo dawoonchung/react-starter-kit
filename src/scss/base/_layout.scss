@@ -1,8 +1,9 @@
 .container {
-  @include make-container();
+  @include make-container($grid-columns);
 
   @each $breakpoint, $gap in $grid-column-gaps {
     @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      max-width: map-get($container-max-widths, $breakpoint);
       gap: $gap;
       padding-right: map-get($body-margins, $breakpoint);
       padding-left: map-get($body-margins, $breakpoint);
@@ -10,7 +11,20 @@
   }
 
   position: relative;
-  max-width: $container-max-width;
+}
+
+@each $breakpoint, $gap in $grid-column-gaps {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    @for $i from 1 through $grid-columns {
+      .nested#{$infix}-#{$i} {
+        @include make-container($i);
+
+        gap: $gap;
+      }
+    }
+  }
 }
 
 @include make-grid-columns();

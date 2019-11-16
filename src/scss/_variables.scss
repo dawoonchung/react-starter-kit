@@ -24,7 +24,13 @@ $body-margins: (
   xl: 4rem,
 );
 
-$container-max-width: 1920px;
+$container-max-widths: (
+  xs: 576px,
+  sm: 1024px,
+  md: 1200px,
+  lg: 1440px,
+  xl: 1920px,
+);
 
 // Typography
 $enable-responsive-font-sizes: true;
