@@ -1,3 +1,7 @@
+html {
+  font-size: $font-size-root;
+}
+
 body {
   @include font-size($font-size-base);
   -webkit-font-smoothing: antialiased;
