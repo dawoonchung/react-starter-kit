@@ -22,7 +22,8 @@
       .nested#{$infix}-#{$i} {
         @include make-container($i);
 
-        gap: $gap;
+        column-gap: $gap;
+        row-gap: map-get($grid-row-gaps, $breakpoint);
       }
     }
   }
