@@ -1,9 +1,13 @@
 html {
-  font-size: $font-size-root;
+  @each $breakpoint, $font-size in $root-font-sizes {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      font-size: $font-size;
+    }
+  }
 }
 
 body {
-  @include font-size($font-size-base);
+  font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
