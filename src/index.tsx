@@ -7,16 +7,16 @@ import * as serviceWorker from './utilities/serviceWorker';
 import './scss/style.scss';
 
 import Routes from './routes';
-import configureStore from './store';
-
-const store = configureStore();
+import store from './store';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <Routes />
-    </Router>
-  </Provider>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <Router>
+        <Routes />
+      </Router>
+    </Provider>
+  </React.StrictMode>,
   document.getElementById('root'),
 );
 
