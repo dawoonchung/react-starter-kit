@@ -5,9 +5,9 @@
   "dependencies": {
     "@babel/core": "7.10.3",
     "@svgr/webpack": "5.4.0",
-    "@testing-library/jest-dom": "^5.10.1",
-    "@testing-library/react": "^10.4.1",
-    "@testing-library/user-event": "^12.0.7",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.3",
+    "@testing-library/user-event": "^12.0.11",
     "@typescript-eslint/eslint-plugin": "3.4.0",
     "@typescript-eslint/parser": "3.4.0",
     "babel-eslint": "10.1.0",
@@ -58,6 +58,7 @@
     "semver": "7.3.2",
     "style-loader": "1.2.1",
     "stylelint": "^13.6.1",
+    "stylelint-config-css-modules": "^2.2.0",
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
@@ -170,7 +171,8 @@
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-sass-guidelines"
+      "stylelint-config-sass-guidelines",
+      "stylelint-config-css-modules"
     ],
     "rules": {
       "declaration-no-important": true,
