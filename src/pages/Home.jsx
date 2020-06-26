@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from '../components/Counter';
 
 const Home = () => (
   <div className="home">
@@ -7,6 +8,8 @@ const Home = () => (
         <h1 className="col-12">
           Start your project!
         </h1>
+
+        <Counter />
       </div>
     </main>
   </div>

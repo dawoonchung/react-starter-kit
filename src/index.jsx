@@ -10,11 +10,13 @@ import Routes from './routes';
 import store from './store';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <Routes />
-    </Router>
-  </Provider>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <Router>
+        <Routes />
+      </Router>
+    </Provider>
+  </React.StrictMode>,
   document.getElementById('root'),
 );
 

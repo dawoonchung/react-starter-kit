@@ -62,6 +62,7 @@
     "semver": "7.3.2",
     "style-loader": "1.2.1",
     "stylelint": "^13.6.1",
+    "stylelint-config-css-modules": "^2.2.0",
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
@@ -83,7 +84,10 @@
     "env": {
       "browser": true
     },
-    "extends": "airbnb",
+    "extends": [
+      "airbnb",
+      "airbnb/hooks"
+    ],
     "plugins": [
       "react-hooks"
     ],
@@ -98,10 +102,27 @@
           ]
         }
       ],
-      "no-unused-vars": "warn",
-      "react/jsx-filename-extension": "off",
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn"
+      "no-param-reassign": [
+        "error",
+        {
+          "props": true,
+          "ignorePropertyModificationsFor": [
+            "acc",
+            "accumulator",
+            "e",
+            "ctx",
+            "context",
+            "req",
+            "request",
+            "res",
+            "response",
+            "$scope",
+            "state",
+            "staticContext"
+          ]
+        }
+      ],
+      "no-unused-vars": "warn"
     }
   },
   "browserslist": {
@@ -174,7 +195,8 @@
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-sass-guidelines"
+      "stylelint-config-sass-guidelines",
+      "stylelint-config-css-modules"
     ],
     "rules": {
       "declaration-no-important": true,

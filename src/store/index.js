@@ -1,10 +1,13 @@
 /* eslint-disable global-require */
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import rootReducer from './rootReducer';
 
 const store = configureStore({
   reducer: rootReducer,
-  middleware: process.env.NODE_ENV === 'development' ? require('redux-logger') : undefined,
+  middleware: process.env.NODE_ENV === 'development'
+    ? getDefaultMiddleware().concat(require('redux-logger').default)
+    : undefined,
+  devTools: process.env.NODE_ENV === 'development',
 });
 
 if (process.env.NODE_ENV === 'development' && module.hot) {
@@ -13,16 +16,5 @@ if (process.env.NODE_ENV === 'development' && module.hot) {
     store.replaceReducer(newRootReducer);
   });
 }
-
-/*
-if (process.env.NODE_ENV === 'development') {
-  const { createLogger } = require('redux-logger');
-  const loggerMiddleware = createLogger();
-
-  middleware = composeWithDevTools(applyMiddleware(loggerMiddleware));
-} else {
-  middleware = applyMiddleware();
-}
-*/
 
 export default store;
