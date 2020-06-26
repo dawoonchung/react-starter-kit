@@ -38,9 +38,9 @@
     "jest-resolve": "26.1.0",
     "jest-watch-typeahead": "^0.6.0",
     "mini-css-extract-plugin": "0.9.0",
-    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.4",
+    "postcss-cssnext": "^3.1.0",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-loader": "3.0.0",
     "postcss-normalize": "9.0.0",
@@ -59,9 +59,8 @@
     "style-loader": "1.2.1",
     "stylelint": "^13.6.1",
     "stylelint-config-css-modules": "^2.2.0",
-    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0",
     "stylelint-webpack-plugin": "^2.1.0",
     "terser-webpack-plugin": "3.0.6",
     "ts-pnp": "1.2.0",
@@ -171,8 +170,11 @@
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-sass-guidelines",
+      "stylelint-config-recommended",
       "stylelint-config-css-modules"
+    ],
+    "plugins": [
+      "stylelint-order"
     ],
     "rules": {
       "declaration-no-important": true,
