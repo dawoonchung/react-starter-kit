@@ -1,10 +1,10 @@
-@import 'normalize.css/opinionated.css';
-
-// test
+// @import 'normalize.css/opinionated.css';
+@import '_variables' (min-width: 25rem);
 
 body {
+  // @import '_variables.css';
+
   all: initial;
-  background-color: $black;
   font-size: 100%;
 
   &:hover {
@@ -14,6 +14,4 @@ body {
 
 .home {
   lost-column: 1/3;
-
-  test-property: 'hi';
 }

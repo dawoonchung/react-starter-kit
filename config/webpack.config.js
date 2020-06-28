@@ -94,10 +94,10 @@ module.exports = function(webpackEnv) {
           ident: 'postcss',
           parser: 'postcss-scss',
           plugins: () => [
-            require('stylelint')(),
+            require('postcss-import'),
             require('postcss-flexbugs-fixes'),
             require('lost'),
-            // require('postcss-simple-vars'),
+            require('postcss-simple-vars'),
             require('postcss-preset-env')({
               autoprefixer: {
                 flexbox: 'no-2009',
