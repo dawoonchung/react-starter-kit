@@ -1,3 +1,19 @@
+@import 'normalize.css/opinionated.css';
+
+// test
+
 body {
+  all: initial;
+  background-color: $black;
   font-size: 100%;
+
+  &:hover {
+    background-color: #f00;
+  }
+}
+
+.home {
+  lost-column: 1/3;
+
+  test-property: 'hi';
 }
