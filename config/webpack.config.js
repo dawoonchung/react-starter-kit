@@ -103,7 +103,8 @@ module.exports = function(webpackEnv) {
             // Adds PostCSS Normalize as the reset css with default options,
             // so that it honors browserslist config in package.json
             // which in turn let's users customize the target behavior as per their needs.
-            postcssNormalize(),
+            // postcssNormalize(),
+            require('lost'),
           ],
           sourceMap: isEnvProduction && shouldUseSourceMap,
         },

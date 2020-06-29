@@ -2,6 +2,17 @@
 @import 'variables';
 @import '~bootstrap/scss/bootstrap-reboot';
 @import 'mixins';
-@import 'base';
-@import 'components';
-@import 'pages';
+
+html {
+  @each $breakpoint, $font-size in $root-font-sizes {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      font-size: $font-size;
+    }
+  }
+}
+
+body {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -37,6 +37,7 @@
     "jest-environment-jsdom-fourteen": "1.0.1",
     "jest-resolve": "26.1.0",
     "jest-watch-typeahead": "^0.6.0",
+    "lost": "^8.3.1",
     "mini-css-extract-plugin": "0.9.0",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "5.0.3",
@@ -58,7 +59,6 @@
     "semver": "7.3.2",
     "style-loader": "1.2.1",
     "stylelint": "^13.6.1",
-    "stylelint-config-css-modules": "^2.2.0",
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-scss": "^3.18.0",
     "stylelint-webpack-plugin": "^2.1.0",
@@ -166,110 +166,6 @@
   "babel": {
     "presets": [
       "react-app"
-    ]
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-sass-guidelines",
-      "stylelint-config-css-modules"
-    ],
-    "rules": {
-      "at-rule-no-unknown": null,
-      "declaration-no-important": true,
-      "max-nesting-depth": 3,
-      "order/properties-alphabetical-order": null,
-      "order/properties-order": [
-        [
-          "position",
-          "z-index",
-          "top",
-          "right",
-          "bottom",
-          "left",
-          "display",
-          "overflow",
-          "overflow-x",
-          "overflow-y",
-          "width",
-          "min-width",
-          "max-width",
-          "height",
-          "min-height",
-          "max-height",
-          "box-sizing",
-          "flex",
-          "flex-basis",
-          "flex-direction",
-          "flex-flow",
-          "flex-grow",
-          "flex-shrink",
-          "flex-wrap",
-          "grid",
-          "grid-area",
-          "grid-auto-columns",
-          "grid-auto-rows",
-          "grid-auto-flow",
-          "gap",
-          "grid-gap",
-          "grid-column",
-          "column-gap",
-          "grid-column-gap",
-          "grid-column-start",
-          "grid-column-end",
-          "grid-row",
-          "row-gap",
-          "grid-row-gap",
-          "grid-row-start",
-          "grid-row-end",
-          "grid-template",
-          "grid-template-areas",
-          "grid-template-columns",
-          "grid-template-rows",
-          "align-content",
-          "align-items",
-          "align-self",
-          "justify-content",
-          "justify-items",
-          "justify-self",
-          "place-content",
-          "place-items",
-          "place-self",
-          "order",
-          "padding",
-          "padding-top",
-          "padding-right",
-          "padding-bottom",
-          "padding-left",
-          "border",
-          "border-top",
-          "border-right",
-          "border-bottom",
-          "border-left",
-          "border-radius",
-          "border-radius-top",
-          "border-radius-right",
-          "border-radius-bottom",
-          "border-radius-left",
-          "border-color",
-          "margin",
-          "margin-top",
-          "margin-right",
-          "margin-bottom",
-          "margin-left"
-        ],
-        {
-          "unspecified": "bottomAlphabetical"
-        }
-      ],
-      "selector-class-pattern": [
-        "^[a-z0-9\\-\\_]+$",
-        {
-          "message": "Selector should be written in lowercase with hyphens or underscore (selector-class-pattern)"
-        }
-      ]
-    },
-    "ignoreFiles": [
-      "**/vendor/*"
     ]
   }
 }
