@@ -7842,7 +7842,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-"lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.5:
+"lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -9244,6 +9244,20 @@ postcss-double-position-gradients@^1.0.0:
     postcss "^7.0.5"
     postcss-values-parser "^2.0.0"
 
+postcss-easy-import@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-easy-import/-/postcss-easy-import-3.0.0.tgz#8eaaf5ae59566083d0cae98735dfd803e3ab194d"
+  integrity sha512-cfNsear/v8xlkl9v5Wm8y4Do/puiDQTFF+WX2Fo++h7oKt1fKWVVW/5Ca8hslYDQWnjndrg813cA23Pt1jsYdg==
+  dependencies:
+    globby "^6.1.0"
+    is-glob "^4.0.0"
+    lodash "^4.17.4"
+    object-assign "^4.0.1"
+    pify "^3.0.0"
+    postcss "^6.0.11"
+    postcss-import "^10.0.0"
+    resolve "^1.1.7"
+
 postcss-env-function@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/postcss-env-function/-/postcss-env-function-2.0.2.tgz#0f3e3d3c57f094a92c2baf4b6241f0b0da5365d7"
@@ -9302,12 +9316,13 @@ postcss-image-set-function@^3.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-import@^12.0.1:
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-12.0.1.tgz#cf8c7ab0b5ccab5649024536e565f841928b7153"
-  integrity sha512-3Gti33dmCjyKBgimqGxL3vcV8w9+bsHwO5UrBawp796+jdardbcFl4RP5w/76BwNL7aGzpKstIfF9I+kdE8pTw==
+postcss-import@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-10.0.0.tgz#4c85c97b099136cc5ea0240dc1dfdbfde4e2ebbe"
+  integrity sha1-TIXJewmRNsxeoCQNwd/b/eTi674=
   dependencies:
-    postcss "^7.0.1"
+    object-assign "^4.0.1"
+    postcss "^6.0.1"
     postcss-value-parser "^3.2.3"
     read-cache "^1.0.0"
     resolve "^1.1.7"
@@ -9835,6 +9850,15 @@ postcss@7.0.21:
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
+
+postcss@^6.0.1, postcss@^6.0.11:
+  version "6.0.23"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
+  integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==
+  dependencies:
+    chalk "^2.4.1"
+    source-map "^0.6.1"
+    supports-color "^5.4.0"
 
 postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.5, postcss@^7.0.6, postcss@^7.0.7:
   version "7.0.27"
@@ -11703,7 +11727,7 @@ supports-color@^2.0.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
 
-supports-color@^5.3.0:
+supports-color@^5.3.0, supports-color@^5.4.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==

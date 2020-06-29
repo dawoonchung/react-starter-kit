@@ -1,8 +1,7 @@
-// @import 'normalize.css/opinionated.css';
-@import '_variables' (min-width: 25rem);
+@import 'variables';
+@import 'normalize.css/opinionated.css';
 
 body {
-  // @import '_variables.css';
 
   all: initial;
   font-size: 100%;
