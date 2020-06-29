@@ -6,7 +6,7 @@ import Routes from './routes';
 
 import * as serviceWorker from './utilities/serviceWorker';
 
-import './style.css';
+import './style.scss';
 
 ReactDOM.render(
   <Router>
