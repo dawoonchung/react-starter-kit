@@ -98,12 +98,13 @@ module.exports = function(webpackEnv) {
               autoprefixer: {
                 flexbox: 'no-2009',
               },
-              stage: 3,
+              stage: 1,
             }),
             // Adds PostCSS Normalize as the reset css with default options,
             // so that it honors browserslist config in package.json
             // which in turn let's users customize the target behavior as per their needs.
             postcssNormalize(),
+            require('postcss-modules-values'),
             require('lost'),
           ],
           sourceMap: isEnvProduction && shouldUseSourceMap,
@@ -650,7 +651,10 @@ module.exports = function(webpackEnv) {
           // The formatter is invoked directly in WebpackDevServerUtils during development
           formatter: isEnvProduction ? typescriptFormatter : undefined,
         }),
-      new StyleLintPlugin(),
+      new StyleLintPlugin({
+        files: '**/*.css',
+        // customSyntax: 'postcss-scss',
+      }),
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell webpack to provide empty mocks for them so importing them works.

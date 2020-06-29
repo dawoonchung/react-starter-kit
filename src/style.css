@@ -1,0 +1,6 @@
+@import 'normalize.css/opinionated.css';
+@import 'css/reboot.css';
+
+.home {
+  lost-column: 1/3;
+}

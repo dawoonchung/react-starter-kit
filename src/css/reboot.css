@@ -1,0 +1,6 @@
+@value variables: "./variables.css";
+@value black from variables;
+
+body {
+  color: black;
+}

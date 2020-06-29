@@ -1,10 +1,11 @@
 module.exports = {
   extends: [
-    'stylelint-config-sass-guidelines',
+    'stylelint-config-standard',
   ],
   ignoreFiles: [
     '**/vendor/*',
   ],
+  plugins: ['stylelint-order'],
   rules: {
     'at-rule-no-unknown': [true, {
       ignoreAtRules: [
