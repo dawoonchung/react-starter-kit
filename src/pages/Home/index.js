@@ -4,7 +4,7 @@ import styles from './home.module.scss';
 const Home = () => (
   <div className="home">
     <main>
-      <div>
+      <div className={styles.row}>
         <h1 className={styles.title}>
           Start your project!
         </h1>

@@ -44,7 +44,6 @@
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-loader": "3.0.0",
-    "postcss-modules": "^3.1.0",
     "postcss-normalize": "^9.0.0",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.2",
@@ -80,7 +79,10 @@
     "env": {
       "browser": true
     },
-    "extends": "airbnb",
+    "extends": [
+      "airbnb",
+      "airbnb/hooks"
+    ],
     "plugins": [
       "react-hooks"
     ],
@@ -95,10 +97,27 @@
           ]
         }
       ],
-      "no-unused-vars": "warn",
-      "react/jsx-filename-extension": "off",
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn"
+      "no-param-reassign": [
+        "error",
+        {
+          "props": true,
+          "ignorePropertyModificationsFor": [
+            "acc",
+            "accumulator",
+            "e",
+            "ctx",
+            "context",
+            "req",
+            "request",
+            "res",
+            "response",
+            "$scope",
+            "state",
+            "staticContext"
+          ]
+        }
+      ],
+      "no-unused-vars": "warn"
     }
   },
   "browserslist": {
