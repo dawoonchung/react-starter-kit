@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './home.module.scss';
 
 const Home = () => (
   <div className="home">
-    <main className="container-fluid">
-      <div className="row">
-        <h1 className="col-12">
+    <main>
+      <div className={styles.row}>
+        <h1 className={styles.title}>
           Start your project!
         </h1>
       </div>
