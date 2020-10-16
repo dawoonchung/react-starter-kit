@@ -10186,7 +10186,14 @@ postcss-resolve-nested-selector@^0.1.1:
   resolved "https://registry.yarnpkg.com/postcss-resolve-nested-selector/-/postcss-resolve-nested-selector-0.1.1.tgz#29ccbc7c37dedfac304e9fff0bf1596b3f6a0e4e"
   integrity sha1-Kcy8fDfe36wwTp//C/FZaz9qDk4=
 
-postcss-safe-parser@4.0.2, postcss-safe-parser@^4.0.2:
+postcss-safe-parser@5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-safe-parser/-/postcss-safe-parser-5.0.2.tgz#459dd27df6bc2ba64608824ba39e45dacf5e852d"
+  integrity sha512-jDUfCPJbKOABhwpUKcqCVbbXiloe/QXMcbJ6Iipf3sDIihEzTqRCeMBfRaOHxhBuTYqtASrI1KJWxzztZU4qUQ==
+  dependencies:
+    postcss "^8.1.0"
+
+postcss-safe-parser@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/postcss-safe-parser/-/postcss-safe-parser-4.0.2.tgz#a6d4e48f0f37d9f7c11b2a581bf00f8ba4870b96"
   integrity sha512-Uw6ekxSWNLCPesSv/cmqf2bY/77z11O7jZGPax3ycZMFU/oi2DMH9i89AdHc1tRwFg/arFoEwX0IS3LCUxJh1g==
@@ -10353,7 +10360,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^8.1.1:
+postcss@^8.1.0, postcss@^8.1.1:
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.1.1.tgz#c3a287dd10e4f6c84cb3791052b96a5d859c9389"
   integrity sha512-9DGLSsjooH3kSNjTZUOt2eIj2ZTW0VI2PZ/3My+8TC7KIbH2OKwUlISfDsf63EP4aiRUt3XkEWMWvyJHvJelEg==
@@ -12206,13 +12213,13 @@ strip-json-comments@^3.1.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-style-loader@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-1.2.1.tgz#c5cbbfbf1170d076cfdd86e0109c5bba114baa1a"
-  integrity sha512-ByHSTQvHLkWE9Ir5+lGbVOXhxX10fbprhLvdg96wedFZb4NDekDPxVKv5Fwmio+QcMlkkNfuK+5W1peQ5CUhZg==
+style-loader@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-2.0.0.tgz#9669602fd4690740eaaec137799a03addbbc393c"
+  integrity sha512-Z0gYUJmzZ6ZdRUqpg1r8GsaFKypE+3xAzuFeMuoHgjc9KZv3wMyCRjQIWEbhoFSq7+7yoHXySDJyyWQaPajeiQ==
   dependencies:
     loader-utils "^2.0.0"
-    schema-utils "^2.6.6"
+    schema-utils "^3.0.0"
 
 style-search@^0.1.0:
   version "0.1.0"
